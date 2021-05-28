@@ -1,0 +1,1068 @@
+@font-face 
+    font-family: Roboto-bold
+    src: url(../fonts/Roboto-Bold.ttf)
+@font-face 
+    font-family: Roboto-light
+    src: url(../fonts/Roboto-Light.ttf)
+@font-face 
+    font-family: Roboto-thin
+    src: url(../fonts/Roboto-Thin.ttf)
+
+/*Общие настройки*/
+*
+    margin: 0
+    box-sizing: border-box
+.container
+    max-width: 1140px
+    margin: auto
+.row
+    display: flex
+a
+    text-decoration: none
+    color: #000000
+.attention
+    color: #06bee1
+.button
+    text-transform: uppercase
+    font-size: 14px
+    font-family: Roboto-bold
+    border-radius: 5px
+    border: none
+    color: #ffffff
+    cursor: pointer
+.button__primary
+    background: #0842b7
+.button__secondary
+    border: 1px solid #0842b7
+    background: transparent
+    color: #0842b7
+
+
+/*Header Начало*/
+.header
+    position: relative
+    background: #ffffff
+    padding: 34px 0
+    z-index: 999
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__phone
+        font-family: Roboto-bold
+        &__light
+            font-family: Roboto-light
+            color: #777777
+.logo
+    display: flex
+    align-items: center
+    &__text
+     font-family: Roboto-bold
+     color: #000000
+     font-size: 16px
+     margin-left: 12px
+.nav
+    max-width: 510px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__link
+        font-family: Roboto-bold
+        color: #777777
+        font-size: 14px
+        &:hover
+            color: #000000
+            padding-bottom: 37px
+            margin-bottom: -39px
+            border-bottom: 3px solid #0056cf
+
+
+/*Начало Hero*/
+.hero
+    display: flex
+    margin-top: -88px
+    padding-top: 365px
+    padding-bottom: 400px
+    background: url('../img/hero-bg.png') no-repeat center / cover
+    &__block
+        flex-basis: 65%
+        &__title
+            display: flex
+            flex-direction: column
+            margin-bottom: 40px
+        &__description
+            display: flex
+            align-items: center
+            margin-bottom: 277px
+        &__buttons
+            display: flex
+            flex-direction: column
+            margin-right: 55px
+    &__title
+        font-family: Roboto-light
+        font-size: 70px
+        line-height: 45px
+        margin-bottom: 30px
+        font-weight: normal
+        &__secondary
+            font-size: 36px
+    &__description
+        font-family: Roboto-light
+        max-width: 350px
+    &__info
+        font-family: Roboto-light
+        max-width: 330px
+        font-size: 24px
+    &__button
+        padding: 18px 40px
+        margin-bottom: 12px
+        &:last-child
+            margin: 0
+.why__robot
+    font-family: Roboto-light
+    padding: 22px 25px
+    background: #ffffff
+    font-size: 26px
+
+
+/*Начало info*/
+.info
+    margin-top: -200px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        border-bottom: 1px solid #eaf1f7
+        padding-bottom: 115px
+    &__subtitle
+        font-family: Roboto-bold
+        font-size: 24px
+        margin-bottom: 35px
+        margin-top: 75px
+    &__description
+        font-family: Roboto-light
+        line-height: 1.4
+
+        /*info__profit*/
+
+    &__profit
+        display: flex
+        flex-direction: column
+        padding-bottom: 15px
+        &__subtitle
+            max-width: 275px
+        &__description
+            max-width: 220px    
+    &__title
+        font-family: Roboto-thin
+        font-weight: normal
+        font-size: 320px
+        line-height: 0.8
+
+        /*info__tools*/
+
+    &__tools
+        max-width: 570px
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__analysis
+        display: flex
+        flex-direction: column
+        margin-top: 15px
+        &__normal
+            font-family: Roboto-light
+        &__subtitle
+            max-width: 200px
+        &__description
+            max-width: 260px
+        &__image
+            width: 100px
+            height: 66px
+    &__instruments
+        display: flex
+        flex-direction: column
+        &__normal
+            font-family: Roboto-light
+        &__subtitle
+            max-width: 200px
+        &__description
+            max-width: 270px
+        &__image
+            width: 79px
+            height: 83px
+    &__attention
+        font-size: 100px
+
+
+/*Начало create*/
+.create
+    padding-top: 115px
+    padding-bottom: 120px
+    background: url('../img/create-bg.png') no-repeat bottom 
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        max-width: 485px
+        font-family: Roboto-light
+        font-weight: normal
+        font-size: 35px
+        text-align: center
+        margin-bottom: 45px
+    &__description
+        max-width: 360px
+        font-family: Roboto-light
+        text-align: center
+        margin-bottom: 70px
+
+.calculator
+    max-width: 1055px
+    width: 100%
+    &__title
+        max-width: 255px
+        font-size: 23px
+        font-family: Roboto-bold
+        &__normal
+            font-family: Roboto-light
+    &__subtitle
+        max-width: 185px
+        font-family: Roboto-light
+    &__input
+        width: 98px
+        height: 48px
+        border: 1px solid #cfdeee
+        border-radius: 3px
+        margin-right: 30px
+        outline: none
+        font-family: Roboto-bold
+        padding-left: 20px
+        font-size: 16px
+        background: transparent
+    &__description
+        max-width: 200px
+        font-family: Roboto-light
+    &__row
+        align-items: center
+        padding-bottom: 15px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 665px
+            height: 0px
+            border: 1px solid #eaf1f7
+        &:last-child
+            margin-top: 25px
+            padding-bottom: 0
+            margin-bottom: 70px
+            &::before
+                display: none
+    &__button
+        padding: 15px 30px
+        margin: auto
+.col-37
+    display: flex
+    align-items: center
+    flex-basis: 37%
+.col-26
+    display: flex
+    align-items: center
+    flex-basis: 26%
+
+
+/*Начало training*/
+.training
+    padding-top: 130px
+    padding-bottom: 118px
+    background: url('../img/training-bg.jpg') no-repeat center / cover
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+        color: #ffffff
+        max-width: 460px
+        font-family: Roboto-bold
+        font-size: 24px
+        text-align: center
+        margin-bottom: 38px
+    &__button
+        border: 1px solid #ffffff
+        background: transparent
+        padding: 13px 35px
+
+
+/*Начало Benefits*/
+.benefits
+    padding-top: 120px
+    background: #eaf1f7 url('../img/benefits-bg.png') no-repeat center bottom
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+    &__title
+        font-family: Roboto-light
+        font-size: 36px
+        font-weight: normal
+        max-width: 465px
+        text-align: center
+        margin-bottom: 75px
+        &--bold
+            font-family: Roboto-bold
+    &__swiper
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            
+        &-slide
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-left: 103px
+            padding-right: 103px
+            padding-top: 406px
+            padding-bottom: 120px
+            
+            background: url('../img/benefits-phone.png') no-repeat center
+        &-container
+            max-width: 600px
+        &-title
+            font-family: Roboto-bold
+            font-size: 24px
+            margin-bottom: 35px
+        &-description
+            font-family: Roboto-light
+            font-size: 16px
+            text-align: center
+            max-width: 160px
+        &-button
+            &-prev
+                top: 65%
+                left: 25%
+            &-next
+                top: 65%
+                right: 25%
+/*Начало Steps__demo*/
+.steps
+    &__demo
+        padding-top: 115px
+        padding-bottom: 120px
+        &__block
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            font-family: Roboto-light
+            font-weight: normal
+            font-size: 35px
+            margin-bottom: 35px
+            &--bold
+                font-family: Roboto-bold
+        &__description
+            font-family: Roboto-light
+            font-size: 16px
+            text-align: center
+            max-width: 355px
+        &__map
+            &--study
+                display: flex
+                flex-direction: column
+                align-items: center
+        &__step
+            background: url('../img/steps-arrow-down.png') no-repeat center top 50%
+            font-family: Roboto-light
+            font-size: 24px
+            padding-top: 100px
+            position: relative
+        &__video
+            margin-top: 85px
+            margin-bottom: 80px
+            padding: 162px 441px
+            background: url('../img/steps-demo-video.jpg') no-repeat center
+        &__example
+            &--work
+                display: flex
+                flex-direction: column
+                align-items: center
+                &__title
+                    font-family: Roboto-bold
+                    font-size: 24px
+                    margin-bottom: 35px
+                &__description
+                    font-family: Roboto-light
+                    font-size: 16px
+                    text-align: center
+                    max-width: 565px
+                    margin-bottom: 45px
+        &__button
+            padding: 14px 40px
+             
+
+/*начало Study*/
+.study
+    margin-top: 115px
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 120px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 0
+            bottom: 0
+            border: 1px solid #eaf1f7
+        &__cards
+            display: flex
+            justify-content: space-between
+            max-width: 1140px
+            width: 100%
+    &__title
+        font-family: Roboto-light
+        font-size: 36px
+        font-weight: normal
+        margin-bottom: 60px
+    &__info
+        display: flex
+        justify-content: space-between
+        max-width: 1140px
+        width: 100%
+        margin-bottom: 65px
+        &__subtitle
+            font-family: Roboto-bold
+            color: #ffffff
+            font-size: 24px
+            margin-bottom: 30px
+        &__description
+            font-family: Roboto-light
+            color: #ffffff
+            font-size: 15px
+        &__test
+            padding-top: 187px
+            padding-bottom: 43px
+            padding-left: 55px
+            padding-right: 305px
+            background: url('../img/study-test-bg.jpg') no-repeat center
+            &__description
+                max-width: 195px
+        &__help
+            padding-top: 187px
+            padding-bottom: 43px
+            padding-left: 55px
+            padding-right: 240px
+            background: url('../img/study-help-bg.jpg') no-repeat center
+            &__description
+                max-width: 260px
+    &__card
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        max-width: 255px
+        &__image
+            margin-bottom: 45px
+        &__title
+            margin-bottom: 35px
+            font-family: Roboto-bold
+            font-size: 24px
+        &__description
+            font-family: Roboto-light
+            font-size: 16px
+
+
+/*Начало Study__process*/
+.study
+    &__process
+        background: url('../img/study-process-bg.png') no-repeat center / cover
+        padding-top: 40px
+        padding-bottom: 115px
+        margin-top: 75px
+        &__block
+            &__cards
+                display: flex
+                justify-content: space-between
+        &__title
+            font-family: Roboto-light
+            font-weight: normal
+            font-size: 36px
+            max-width: 465px
+            margin-bottom: 110px
+            &--bold
+                font-family: Roboto-bold
+        &__card
+            display: flex
+            flex-direction: column
+            &__title
+                font-family: Roboto-bold
+                font-size: 36px
+                margin-bottom: 45px
+            &__subtitle
+                font-family: Roboto-light
+                font-size: 24px
+                margin-bottom: 30px
+            &__description
+                max-width: 160px
+                font-family: Roboto-light
+                font-size: 16px
+                
+
+/*Начало Advantages*/
+.advantages
+    padding-top: 120px
+    padding-bottom: 120px
+    background: #eaf1f7
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__card
+            max-width: 1070px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            margin-bottom: 70px
+            &:last-child
+                margin-bottom: 0
+    &__title
+        font-family: Roboto-light
+        font-weight: normal
+        font-size: 36px
+        margin-bottom: 55px
+    &__subtitle
+        font-size: 25px
+        font-family: Roboto-bold
+        margin-bottom: 30px
+    &__card
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 330px
+        width: 100%
+        text-align: center
+        &__img
+            margin-bottom: 20px
+        &__title
+            font-family: Roboto-bold
+            font-size: 17px
+            margin-bottom: 10px
+        &__description
+            font-family: Roboto-light
+            &-profi
+                max-width: 200px
+            &__sequence
+                max-width: 320px
+            &-practice
+                max-width: 295px
+            &-author
+                max-width: 250px
+            &-data
+                max-width: 250px
+            &-own
+                max-width: 300px
+
+
+/*Начало Start__study*/
+.start
+    &__study
+        padding-top: 125px
+        padding-bottom: 120px
+        background: url('../img/start-study-bg.jpg') no-repeat center / cover
+        &__block
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__input
+                display: flex
+                flex-direction: column
+        &__title
+            text-align: center
+            font-family: Roboto-bold
+            color: #ffffff
+            font-size: 24px
+            max-width: 410px
+            margin-bottom: 25px
+        &__description 
+            text-align: center
+            font-family: Roboto-light
+            color: #ffffff
+            font-size: 16px
+            max-width: 420px
+            margin-bottom: 45px
+        &__input
+            width: 360px
+            height: 50px
+            border-radius: 5px
+            border: none
+            padding-left: 15px
+            font-family: Roboto-light
+            font-size: 15px
+            outline: none
+            margin-bottom: 25px
+        &__button
+            padding: 16px 100px
+
+
+/*Начало Comments*/
+.comments
+    padding-top: 115px
+    &__container
+        max-width: 1600px
+        width: 100%
+        margin: auto
+    &__title
+        font-family: Roboto-light
+        font-weight: normal
+        text-align: center
+        font-size: 36px
+        margin-bottom: 70px
+        &--bold
+            font-family: Roboto-bold
+    &__video
+        display: flex
+        justify-content: center
+        align-items: center
+        background: url('../img/video-plug.jpg') no-repeat center
+    &__play
+        &--video
+            padding: 161px 441px
+    &__name
+        font-family: Roboto-bold
+        font-size: 22px
+        margin-top: 75px
+        margin-bottom: 40px
+    &__description
+        font-family: Roboto-light
+        text-align: center
+        max-width: 520px
+    &__swiper
+        &-slide
+            display: flex
+            flex-direction: column
+            align-items: center
+
+    &__result
+        background: url('../img/result-bg.png') no-repeat bottom left
+        padding-top: 125px
+        padding-bottom: 120px
+        &__block
+            display: flex
+            justify-content: space-between
+.result
+    &__text
+        display: flex
+        flex-direction: column
+    &__title
+        font-family: Roboto-light
+        font-weight: normal
+        font-size: 35px
+        max-width: 270px
+        margin-bottom: 35px
+        &--bold
+            font-family: Roboto-bold
+    &__description
+        max-width: 245px
+        font-family: Roboto-light
+    &__block
+        display: flex
+        justify-content: space-between
+        max-width: 655px
+        width: 100%
+    &__card
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        max-width: 265px
+        &__title
+            font-family: Roboto-light
+            font-size: 24px
+            margin-top: 45px
+            margin-bottom: 35px
+        &__description
+            font-family: Roboto-light
+
+/*Начало Cost*/
+.cost
+    padding-top: 120px
+    padding-bottom: 120px
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__access
+            display: flex
+            flex-direction: column
+            min-height: 150px
+            justify-content: space-around
+            margin-bottom: 70px
+        &__card
+            max-width: 1070px
+            width: 100%
+            display: flex
+            justify-content: space-between
+    &__title
+        font-family: Roboto-bold
+        font-size: 34px
+        margin-bottom: 35px
+        &__normal
+            font-family: Roboto-light
+            font-weight: normal
+    &__description
+        max-width: 350px
+        font-family: Roboto-light
+        text-align: center
+        margin-bottom: 75px
+    &__card
+        max-width: 390px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        border-right: 1px solid #eaf1f7
+        &:last-child
+            border-right: none
+        &__title
+            font-family: Roboto-bold
+            font-size: 26px
+            margin-bottom: 25px
+        &__price
+            font-family: Roboto-bold
+            font-size: 24px
+            margin-bottom: 45px
+        &__access
+            font-family: Roboto-light
+
+            max-width: 220px
+    &__button
+        padding: 16px 60px
+
+
+/*Начало Development*/
+.development
+    padding-top: 125px
+    padding-bottom: 120px
+    background: url('../img/development-bg.jpg') no-repeat center / cover
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+        color: #000000
+        max-width: 310px
+        font-family: Roboto-bold
+        font-size: 24px
+        text-align: center
+        margin-bottom: 38px
+    &__button
+        padding: 13px 35px
+
+
+/*Начало Questions*/
+.questions
+    padding-top: 130px
+    padding-bottom: 120px
+    background: url('../img/questions-bg.jpg') no-repeat center / cover
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__input
+            max-width: 1140px
+            width: 100%
+            display: flex
+            justify-content: space-between
+    &__title
+        font-family: Roboto-bold
+        color: #ffffff
+        margin-bottom: 35px
+    &__description
+        max-width: 440px
+        font-family: Roboto-light
+        color: #ffffff
+        text-align: center
+        margin-bottom: 35px
+    &__input
+        width: 265px
+        height: 47px
+        border-radius: 5px
+        border: none
+        padding-left: 15px
+        font-family: Roboto-light
+        font-size: 15px
+        outline: none
+    &__button
+        padding: 17px 60px 17px 60px
+
+/*Начало footer*/
+.footer
+    padding-top: 115px
+    padding-bottom: 115px
+    font-family: Roboto-light
+    &__block
+        display: flex
+        flex-direction: column
+    &__mailing
+        display: flex
+        justify-content: space-between
+        margin-bottom: 25px
+    &__mail
+        position: relative
+        &__input
+            font-size: 15px
+            color: #9b9b9b
+            max-width: 265px
+            width: 100%
+            height: 47px
+            border: 1px solid #cfdeee
+            border-radius: 5px
+            padding-left: 20px
+            outline: none
+    &__button
+        position: absolute
+        top: 35%
+        right: 5%
+        background: transparent
+        outline: none
+        border: none
+        cursor: pointer
+    &__title
+    &__description
+        max-width: 135px
+        line-height: 1.5
+    &__links
+        display: flex
+        justify-content: space-between
+        &__block
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: -50%
+                width: 132px
+                height: 0px
+                border: 1px solid #eaf1f7
+        &__social
+            display: flex
+            justify-content: space-between
+            max-width: 265px
+            width: 100%
+    &__link
+        display: flex
+        flex-direction: column
+        color: #9b9b9b
+        margin-bottom: 15px
+        &:hover
+            color: #000000
+        &:last-child
+            margin-bottom: 0
+        &--social
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 37px
+            height: 37px
+            border: 1px solid #0842b7
+            border-radius: 50%
+                
+    
+/*Адаптация*/
+@media screen and ( max-width:1600px  )
+    .hero
+        padding-top: 265px
+        padding-bottom: 350px
+    .info
+        margin-top: -240px
+@media screen and ( max-width:1024px  )
+    .container
+        max-width: 962px
+
+    .hero
+        &__title
+            line-height: 1
+
+    .info
+        &__title
+            font-size: 260px
+
+    .study
+        &__info
+            max-width: 982px
+            &__test
+                padding-right: 125px
+                padding-top: 120px
+            &__help
+                padding-top: 120px
+                padding-right: 135px
+        &__block
+            &__cards
+                justify-content: space-around
+
+    .benefits
+        &__swiper
+            &-button
+                &-prev
+                    left: 15%
+                &-next
+                    right: 15%
+
+    .questions
+        &__block
+            &__input
+                flex-wrap: wrap
+                justify-content: space-around
+        &__button
+            margin-top: 30px
+            padding: 17px 120px
+@media screen and ( max-width:992px  )
+    .container
+        max-width: 768px
+
+    .nav
+        max-width: 350px
+
+
+    .hero
+        &__block
+            flex-basis: 80%
+
+
+    .info
+        &__title
+            font-size: 180px
+        &__subtitle
+            font-size: 20px
+        &__description
+            max-width: 210px
+        &__tools
+            max-width: 450px
+        &__profit
+            padding-bottom: 45px
+
+
+    .calculator
+        &__row
+            &::before
+                width: 480px
+
+
+    .steps
+        &__demo
+            &__video
+                margin: auto
+                margin-top: 85px
+                margin-bottom: 80px
+                padding: 162px 352px
+                max-width: 768px
+                
+
+
+    .study
+        &__info
+            flex-wrap: wrap
+            justify-content: center
+            &__test
+                margin-bottom: 30px
+                padding-right: 305px
+                padding-top: 187px
+            &__help
+                padding-top: 187px
+                padding-left: 240px
+                padding-right: 55px
+                text-align: right
+        &__block
+            &__cards
+                max-width: 768px
+                flex-wrap: wrap
+                justify-content: space-around
+        &__card
+            max-width: 260px
+
+    .comments
+        padding-bottom: 100px
+        &__result
+            display: none
+
+    .questions
+        &__block
+            &__input
+                flex-direction: column
+                align-items: center
+        &__input
+            margin-bottom: 25px
+        &__button
+            margin-top: 0
+            padding: 17px 60px
+@media screen and ( max-width:768px  )
+    .container
+        max-width: 556px
+    
+
+    .nav
+        display: none
+    
+
+    .hero
+        padding-bottom: 200px
+
+
+    .info
+        display: none
+
+    
+    .create
+        padding-top: 0
+    .calculator
+        &__row
+            flex-wrap: wrap
+            justify-content: space-around
+        &__title
+            text-align: center
+            margin-bottom: 30px
+        &__subtitle
+            text-align: center
+            margin: auto
+            margin-bottom: 20px
+    .col-37
+        flex-basis: 51%
+    .col-26
+        flex-basis: 48%
+
+    .study
+        &__card
+            margin-bottom: 50px
+
+
+    .study
+        &__process
+            &__block
+                &__cards
+                    flex-wrap: wrap
+            &__card
+                max-width: 200px
+                width: 100%
+                margin-bottom: 30px
+
+    .benefits
+        &__swiper
+            &-container
+                max-width: 556px
+            &-button
+                &-prev
+                    left: 0%
+                &-next
+                    right: 0%
+
+    .footer
+        &__links
+            flex-wrap: wrap
+            &__block
+                &::before
+                    display: none
+        &__description
+            display: none
